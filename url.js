@@ -597,6 +597,14 @@
         return '';
       }
       return this._scheme + '://' + host;
+    },
+
+    get username() {
+      return this._username;
+    },
+
+    get password() {
+      return this._password ? this._password : '';
     }
   };
 
