@@ -90,7 +90,8 @@
         buffer = '',
         seenAt = false,
         seenBracket = false,
-        errors = [];
+        errors = [],
+        query = '';
 
     loop: while ((input[cursor - 1] != EOF || cursor == 0) && !this._isInvalid) {
       var c = input[cursor];
